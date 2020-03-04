@@ -1,3 +1,6 @@
 require_relative '../config/environment'
+require 'tty-prompt'
+require 'pry'
 
-puts "hello world"
+cli = CommandLineInterface.new
+cli.run
