@@ -9,3 +9,7 @@ gem "require_all"
 gem "faker"
 gem 'tty'
 gem 'pastel'
+gem 'tty-font'
+gem 'tty-box'
+gem 'tty-prompt'
+gem 'tty-color'
