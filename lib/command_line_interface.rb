@@ -201,7 +201,7 @@ class CommandLineInterface
             puts "Now you must make a riddle so that we may remember you."
             puts PASTEL.red("What is the title of your riddle")
             new_riddle.title = user_input
-            puts PASTEL.red("Great! Now what do you want your riddle to be?")
+            puts PASTEL.red("Great! What does your riddle entail?")
             new_riddle.context = user_input
             puts PASTEL.red("You're doing great! Lastly, what do you want the answer to your riddle to be?")
             new_riddle.answer = user_input
