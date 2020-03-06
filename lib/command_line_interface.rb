@@ -57,7 +57,7 @@ class CommandLineInterface
     end
     
     def make_a_new_riddle
-        puts PASTEL.cyan("What is the name/titlefor your new riddle?")
+        puts PASTEL.cyan("What is the name/title of your new riddle?")
         title = user_input
         puts PASTEL.cyan("What is the context of your new riddle?")
         context = user_input
@@ -108,7 +108,8 @@ class CommandLineInterface
                 second_prompt_choice = PROMPT.select(PASTEL.red("Here are this users riddles:"), other_user_riddles(prompt_choice), require: true)
                 end
                 if second_prompt_choice == book.riddle.title
-                    puts PASTEL.red("What would be the answer to this riddle?")
+                    puts ""
+                    puts PASTEL.blue("What would be the answer to this riddle?")
                     puts PASTEL.magenta("*") * 100
                     puts PASTEL.red("Context") + PASTEL.blue(" #{book.riddle.context}")
                     puts PASTEL.magenta("*") * 100
@@ -201,7 +202,7 @@ class CommandLineInterface
             puts "Now you must make a riddle so that we may remember you."
             puts PASTEL.red("What is the title of your riddle")
             new_riddle.title = user_input
-            puts PASTEL.red("Great! What does your riddle entail?")
+            puts PASTEL.red("Great! What does your riddle entail? (The Riddle Itself)")
             new_riddle.context = user_input
             puts PASTEL.red("You're doing great! Lastly, what do you want the answer to your riddle to be?")
             new_riddle.answer = user_input
@@ -261,7 +262,7 @@ class CommandLineInterface
             if @@returning_player_username == book.user.name
                 puts PASTEL.green(STRAIGHT_FONT.write("Hello, #{book.user.name}"))
                 @user_found = true
-                puts PASTEL.green(STRAIGHT_FONT.write("Please input your riddle answer."))
+                puts PASTEL.green(STRAIGHT_FONT.write("Please Answer Your Riddle.", letter_spacing: 1))
                 puts PASTEL.magenta("*") * 100
                 puts PASTEL.red("Riddle Title:") + PASTEL.blue(" #{book.riddle.title}")
                 puts PASTEL.magenta("*") * 100
