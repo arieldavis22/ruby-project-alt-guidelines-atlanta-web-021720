@@ -3,14 +3,20 @@ The riddlebook is a small CLI(command-line interface) application where the User
 
 ## Installation
 To install this CLI application in any directory of choice run the following
+
 `git clone https://github.com/arieldavis22/ruby-project-alt-guidelines-atlanta-web-021720.git`
 
 ## Running this CLI Application
 To run this CLI application first in your terminal run
+
 `rake db:migrate`
+
 then
+
 `rake db:seed`
+
 lastly run
+
 `ruby bin/run.rb`
 
 ## Using The Riddlebook
