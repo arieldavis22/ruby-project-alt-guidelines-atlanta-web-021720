@@ -18,22 +18,34 @@ When the application starts, the **User** will make a new account by selecting *
 
 They will be prompt to enter the following in order:
 **Username**
+
 **Title for login title**
+
 **Context of login title**
+
 **Answer to login title**
 
+
 The **User** will then be redirected back to the home menu.
+
 From here, select **Returning**
+
 This will prompt the **User** to enter in the following:
+
 **Username**
+
 **Login riddle password**
 
 Once the correct credentials are entered, the **User** will be brought to the **Main Menu** where they are able to:
 
 **See My Riddles**: See all the riddles of the current user.
+
 **Make A New Riddle**: Make a new riddle for the current user (create a new title, context, and answer for your riddle).
+
 **Edit My Riddle**: Select from the current users riddle and choose if they wish to edit the title, context, or answer for said riddle.
+
 **Delete My Riddles**: Select a riddle to delete (must have created a riddle besides the login riddle).
+
 **Answer Other Riddles**: Select other users riddles and answer them.
 
 > Made by Ariel Davis
